@@ -57,6 +57,7 @@ public class InteractableTrigger : MonoBehaviour
 
     public virtual void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Detected: " + other.name);
         if (triggerActive)
         {
             if (CheckFilter(other))
