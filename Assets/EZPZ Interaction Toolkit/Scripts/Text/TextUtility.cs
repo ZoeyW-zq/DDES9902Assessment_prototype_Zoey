@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -33,7 +33,10 @@ public class TextUtility : MonoBehaviour
 
     public void Backspace()
     {
-        buffer = buffer.Substring(0, buffer.Length - 1);
+        if (buffer.Length > 0)  
+        {
+            buffer = buffer.Substring(0, buffer.Length - 1);
+        }
 
         if (textDisplay != null)
             textDisplay.text = buffer + cursorText;
@@ -41,5 +44,6 @@ public class TextUtility : MonoBehaviour
         if (textDisplayPUGUI != null)
             textDisplayPUGUI.text = buffer + cursorText;
     }
+
 }
 
