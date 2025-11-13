@@ -46,20 +46,21 @@ public class FirebaseBridge : MonoBehaviour
         if (ed == null)
         {
             ed = new ExperimentData();
-            //ed.timeStamp = System.DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
-            DateTime timeStamp = System.DateTime.UtcNow;
-            timeStamp.AddHours(utcOffset);
-            ed.timeStamp = timeStamp.ToString("yyyy-MM-dd-HH-mm-ss");
+
+            DateTime localTime = System.DateTime.Now;
+            ed.timeStamp = localTime.ToString("yyyy-MM-dd-HH-mm-ss");
+
             ed.participantID = participantID;
         }
         else
         {
-            if (ed.timeStamp.Length == 0)
+            if (string.IsNullOrEmpty(ed.timeStamp))
                 ed.timeStamp = System.DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
         }
 
         GenerateFilename();
     }
+
 
     public void GenerateFilename()
     {

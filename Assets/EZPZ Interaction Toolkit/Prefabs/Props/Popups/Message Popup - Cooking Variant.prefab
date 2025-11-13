@@ -58,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4594509830720006382, guid: e11cdf1767dc1154ba3e76fd5aa29809, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.145
+      value: 8.15
       objectReference: {fileID: 0}
     - target: {fileID: 4594509830720006382, guid: e11cdf1767dc1154ba3e76fd5aa29809, type: 3}
       propertyPath: m_LocalPosition.y
@@ -102,7 +102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8650489584442763259, guid: e11cdf1767dc1154ba3e76fd5aa29809, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -141,8 +141,8 @@ MonoBehaviour:
   subject: {fileID: 0}
   defaultTargetTag: Player
   constantTracking: 1
-  yLookOnly: 0
-  startRotation: {x: 0, y: 0, z: 0, w: 0}
+  yLookOnly: 1
+  startRotation: {x: 0, y: 0, z: 0, w: 1}
   yRotation: 0
 --- !u!114 &676307239606278806
 MonoBehaviour:
