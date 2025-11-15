@@ -25,6 +25,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1815311692115000293, guid: e11cdf1767dc1154ba3e76fd5aa29809, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815311692115000293, guid: e11cdf1767dc1154ba3e76fd5aa29809, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
@@ -102,7 +106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8650489584442763259, guid: e11cdf1767dc1154ba3e76fd5aa29809, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -110,10 +114,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1968351273540259409, guid: e11cdf1767dc1154ba3e76fd5aa29809, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7547864710021922564}
+      addedObject: {fileID: 676307239606278806}
     - targetCorrespondingSourceObject: {fileID: 1968351273540259409, guid: e11cdf1767dc1154ba3e76fd5aa29809, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 676307239606278806}
+      addedObject: {fileID: 9030484151148454545}
   m_SourcePrefab: {fileID: 100100000, guid: e11cdf1767dc1154ba3e76fd5aa29809, type: 3}
 --- !u!1 &1974276472824818803 stripped
 GameObject:
@@ -125,25 +129,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1968351273540259409, guid: e11cdf1767dc1154ba3e76fd5aa29809, type: 3}
   m_PrefabInstance: {fileID: 7163748766222060424}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7547864710021922564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8663309958277826009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d28624e50ae20864dbec36a8b2b27f11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  subject: {fileID: 0}
-  defaultTargetTag: Player
-  constantTracking: 1
-  yLookOnly: 1
-  startRotation: {x: 0, y: 0, z: 0, w: 1}
-  yRotation: 0
 --- !u!114 &676307239606278806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,3 +168,22 @@ MonoBehaviour:
   format: N2
   triggerFlag: 0
   clockRunning: 1
+--- !u!114 &9030484151148454545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8663309958277826009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d28624e50ae20864dbec36a8b2b27f11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  subject: {fileID: 0}
+  defaultTargetTag: MainCamera
+  constantTracking: 1
+  yLookOnly: 0
+  startRotation: {x: -0.25881904, y: 0, z: 0, w: 0.9659258}
+  yRotation: 0
