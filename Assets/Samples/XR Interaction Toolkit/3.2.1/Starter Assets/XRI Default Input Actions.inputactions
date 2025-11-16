@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "XRI Default Input Actions",
     "maps": [
         {
@@ -1695,17 +1696,6 @@
                     "name": "",
                     "id": "d34dafcf-a3a4-4511-a73f-1ecbfd6099c8",
                     "path": "<HandInteractionPoses>{RightHand}/pointer/position",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Aim Position",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "720d5e83-6877-4504-9b4a-aa550c2593af",
-                    "path": "<HoloLensHand>{RightHand}/pointer/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
