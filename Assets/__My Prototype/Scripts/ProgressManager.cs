@@ -6,7 +6,6 @@ public class ProgressManager : MonoBehaviour
 {
     public static ProgressManager Instance;
 
-    [Header("UI")]
     public Slider progressSlider;
     public TextMeshProUGUI progressText;
 
@@ -25,7 +24,7 @@ public class ProgressManager : MonoBehaviour
 
     void Start()
     {
-        // 自动统计：场景里有多少个需要计数的方块
+        
         var reporters = FindObjectsOfType<ProgressReporter>();
         totalBlocks = reporters.Length;
 
@@ -53,7 +52,15 @@ public class ProgressManager : MonoBehaviour
 
     private void UpdateText()
     {
-        if (progressText != null)
+        if (progressText == null)
+        {
+            return;
+        }
+
+        if (completedCount >= totalBlocks)
+            progressText.text = "You're amazing!";
+        else
             progressText.text = $"{completedCount} / {totalBlocks}";
     }
+
 }
