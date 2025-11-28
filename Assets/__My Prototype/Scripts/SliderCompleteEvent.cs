@@ -17,7 +17,7 @@ public class SliderCompleteEvent : MonoBehaviour
 
     private void OnSliderChanged(float value)
     {
-        if (!hasTriggered && value >= 1.0f)
+        if (!hasTriggered && value >= 170.0f)
         {
             hasTriggered = true;
             onSliderFull.Invoke();
